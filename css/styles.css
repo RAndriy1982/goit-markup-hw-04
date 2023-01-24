@@ -21,6 +21,8 @@
   --portfolio-btn-active-background-color: #404bbf;
   --logo-color: #4d5ae5;
   --team-item-background: #ffffff;
+  --team-soc-bg-color: #4D5AE5;
+  --team-soc-accent-bg-color: #404BBF;
   --portfolio-item-img-border-color: #e7e9fc;
   --portfolio-item-img-background: #ffffff;
   --footer-logo-color: #f4f4fd;
@@ -246,9 +248,11 @@ img {
   flex-basis: calc((100% - 72px) / 4);
   width: 264px;
   height: 112px;
-  padding: 24px 100px;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background-color: var(--features-ic-bg-color);
+  display: flex;
 }
 
 .features-ic {
@@ -327,10 +331,33 @@ img {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-content {
   padding: 32px 16px;
+}
+
+.team-social-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-social-item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--team-soc-bg-color);
+}
+
+.team-social-item:is(:hover,:focus) {
+  background-color: var(--team-soc-accent-bg-color)
+}
+
+.team-social-link {
 }
 
 /* -------------------------PORTFOLIO-------------------------- */
