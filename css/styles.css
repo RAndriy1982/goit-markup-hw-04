@@ -13,6 +13,7 @@
   --studio-btn-background-color: #4d5ae5;
   --studio-btn-active-background-color: #404bbf;
   --studio-btn-text: #ffffff;
+  --features-ic-bg-color: #F4F4FD;
   --portfolio-btn-color: #4d5ae5;
   --portfolio-btn-background-color: #f4f4fd;
   --portfolio-btn-border-color: #E7E9FC;
@@ -233,6 +234,26 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.features-list-ic {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.features-item-ic {
+  flex-basis: calc((100% - 72px) / 4);
+  width: 264px;
+  height: 112px;
+  padding: 24px 100px;
+  border-radius: 4px;
+  background-color: var(--features-ic-bg-color);
+}
+
+.features-ic {
+  width: 64px;
+  height: 64px;
 }
 
 /* -------------------------PRODUCTS-------------------------- */
